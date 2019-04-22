@@ -1,0 +1,22 @@
+\babel@toc {english}{}
+\contentsline {section}{Background}{1}{Doc-Start}% 
+\contentsline {section}{Current Status}{1}{Doc-Start}% 
+\contentsline {paragraph}{Current Status}{1}{paragraph*.1}% 
+\contentsline {section}{Key Considerations}{1}{paragraph*.1}% 
+\contentsline {section}{Options}{1}{paragraph*.1}% 
+\contentsline {section}{Conclusion and Recommendations}{1}{paragraph*.1}% 
+\contentsline {section}{References}{2}{section*.2}% 
+\contentsline {section}{About the Author}{2}{section*.3}% 
+\contentsline {paragraph}{David L. Fulton}{2}{paragraph*.4}% 
+\contentsline {paragraph}{Department of Computer Science and Engineering}{2}{paragraph*.5}% 
+\contentsline {paragraph}{Bagley College of Engineering}{2}{paragraph*.6}% 
+\contentsline {paragraph}{Mississippi State University}{2}{paragraph*.7}% 
+\contentsline {section}{Characteristics of a good BN}{3}{paragraph*.7}% 
+\contentsline {section}{BN Structured?}{3}{paragraph*.7}% 
+\contentsline {paragraph}{Issue, Topic, Purpose}{3}{paragraph*.8}% 
+\contentsline {paragraph}{Background}{3}{paragraph*.9}% 
+\contentsline {paragraph}{Key Considerations}{3}{paragraph*.10}% 
+\contentsline {paragraph}{Options (also Next Steps, Comments)}{4}{paragraph*.11}% 
+\contentsline {paragraph}{Conclusion and/or Recommendations}{4}{paragraph*.12}% 
+\contentsline {section}{\numberline {1}Formating Examples}{4}{section.1}% 
+\contentsfinish 
