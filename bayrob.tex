@@ -58,7 +58,7 @@
 \JournalInfo{8713 Advanced Cyber Operations} % Journal information
 \Archive{Briefing Note} % Additional notes (e.g. copyright, DOI, review/research article)
 
-\PaperTitle{Briefing Title} % Article title
+\PaperTitle{OpSec provided Bayrob Group a decade of crime.} % Article title
 
 \Authors{David L. Fulton\textsuperscript{1}*} % Authors
 \affiliation{\textsuperscript{1}\textit{Department of Computer Science and Engineering, Bagley College of Engineering, Mississippi State University}} % Author affiliation
@@ -71,7 +71,8 @@
 %	ABSTRACT
 %-----------------------------------
 
-\Abstract{Bayrob Group's arrest and prosecution provides as windown into a cybercrime group that had fantastic operational security for nearly a decade of operation.}
+\Abstract{Bayrob Group's arrest and prosecution provides a window into a cybercrime group that had fantastic operational security for nearly a decade of operation.
+}
 
 %-----------------------------------
 
@@ -91,49 +92,37 @@
 %-----------------------------------
 %	ARTICLE CONTENTS
 %-----------------------------------
+\section*{Background} 
+In the mid 2000s a small time cybercrime group that became known as the Bayrob Group started operating out of Romania.  The group was named by Symantec based on its early crimes involving eBay.com.\cite{Cimpanu:ZD:Bayrob}  What makes this group interesting is its size, operational capacity, and operational security.  During their near decade long run they managed to steal between four and thirty five million dollars from primarily American targets.  The thefts ranged from sales scams to credit card fraud and cryptojacking.    
 
-%-----------------------------------
-%	BACKGROUND
-%-----------------------------------
-\section*{Background} % The \section*{} command stops section numbering
-In the mid 2000s a small time cybercrime group started operating out of Romania.  What makes this group interesiting is its size, operational capacity and operational secuirty.  During thier near dechade long run they managed to steal between four and thrity five million dollars from primairaly amercian targets.  The thefts ranged from sales scams to chredit card fruad and cryptojacking.    
+\paragraph{The small size} of the Bayrob showcases the concentrated power small teams can have.  The group consisted of Bogdan Nicolescu, Radu Miclaus, and Tiberiu Danet.  Mr. Nicolescu was the group leader and provided the strategic direction of the groups growth and development.  Mr. Tiberiu was their lead malware developer and botnet author.  Interestingly Mr. Tiberiu's skill was such that in 2008 while still a student, was elected to be on Romania's National Computer Science Team.\cite{Cimpanu:ZD:Bayrob}  Mr. Miclaus is described as being the group's manager for auction fruad\footnote{BotHurder and lead funds propagation agent.} and a "junior technical member"\cite{Symantech:Blog:Bayrob}.
 
-\paragraph{The small size} of the group showcases the concentrated power small teams can have.  The group consisted of Bogdan Nicolescu, Radu Miclaus, and Tiberiu Danet.  Mr. Nicolescu was the group leader and provided the stratecgic direction of the groups growth and development.  Mr. Tiberiu was their lead malware developer and botnet author.  Interestingly Mr. Tiberiu's skill was such that in 2008 while still a student, was elected to be the Romania's National Computer Science Team.\cite{Cimpanu:ZD:Bayrob}  Mr. Miclaus is discribed as being the group's manager for auction fruad\footnote{BotHurder and lead funds propagation agent.} and a "junior technical member"\cite{Symantech:Blog:Bayrob}.
-
-\paragraph{The operational scope} of this team developed over time.  Initally it used used auctions for vehicles as a means to source victems.  The group would run an auction to find interested parties.  Then they would cancle the auctions and later contact the victems with a story that the sale had fallen through along with pictures that included personalized malware for the victem.  They would offer the vehicle at a slightly reduced price and if the victem attemped to buy the car the malware would inject false webpages and redirect the victem to a faulse site to complete the transaction.  The groups name "Bayrob" comes from Symantec naming the group based on its early crimes on eBay.com\cite{Cimpanu:ZD:Bayrob}  This personalized and directed criminal work kept them as small time operators.
+\paragraph{The operational scope} of this team developed over time.  Initially it used used auctions for vehicles as a means to source victims.  The group would run an auction to find interested parties.  Then they would cancel the auctions and later contact the victims with a story that the sale had fallen through, along with pictures that included personalized malware for the victim.  They would offer the vehicle at a slightly reduced price and if the victim attempted to buy the car, the malware would inject false web pages and redirect the victim to a false site to complete the transaction.   This personalized and directed criminal work kept them as small time operators.
 
 In time Mr. Nicolescu would lead them into other operations.  The malware would progress from simple and personalized attackware to impersonal keyloggers and bank fraud to pay for the infrastructure as well as theft and money transfers.  
 
-The rise of bitcoin saw them move from targeted attacks to massive infrastructure based cybercrime. They developed a botnet\footnote{PreInternet Of Things} estimated to have included 300,000 - 400,000 machines to privide Bayrob the infrastructure to run crypto coin mining operations.  Such illicet use of computers computing power is termed "CryptoJacking".
+The rise of bitcoin saw them move from targeted attacks to massive infrastructure based cybercrime. They developed a botnet\footnote{PreInternet Of Things} estimated to have included 300,000 - 400,000 machines to provide Bayrob the infrastructure to run crypto coin mining operations.  Such illicit use of computers computing power is termed "CryptoJacking".
  
-\paragraph{Their operational secuirty} was key to thier success and long term operational success.  They used stolen credit cards gained from thier keyloggers to perchase websites.  These websites where algorithimicaly determined and where the first of a multilayered of command and control(CnC) system. Each step would reduce operational risks.\cite{Monte:NAaEFrame} The group also used encrupted emails, encrypted messaging and multiple layers of VPNs to mask thier idenities.  
+\paragraph{Their operational security} was key to their success and long term operational success.  They used stolen credit cards gained from their keyloggers to purchase websites.  These websites where algorithmically determined and where the first of a multilayered of command and control(CnC) system. Each step would reduce operational risks.\cite{Monte:NAaEFrame} The group also used encrypted emails, encrypted messaging, and multiple layers of VPNs to mask their identities.  
     
-  
+\section*{Current Status} 
+Ultimately the group was captured due to two failures.  First, there was an "error" \cite{Cimpanu:ZD:Bayrob} in the VPN software that opened up their operations to a degree without revealing who the people running the botnet were.  Second, Mr. Miclaus forgot to logout of the VPN and accessed their real AOL account rather than the spam sending AOL account\footnote{Browser auto-fill for the "win"?}.  The simple act of checking their email from their "secure" VPN was the break in operational security the FBI needed to get a silent search warrant.  
 
-%-----------------------------------
-%	Current Status
-%-----------------------------------
-\section*{Current Status} % The \section*{} command stops section numbering
-Altemtily the group was captured due to two failures.  First there was an "error" \cite{Cimpanu:ZD:Bayrob} in the VPN software that opened up thier operations to a degree without revealing who the people running the botnet was.  Second Mr. Miclaus forgot to logout of the VPN and accessed thier real AOL account rather then the spam sending AOL account\footnote{Browser auto-fill for the "win"?}.  The simple act of checking thier email from thier "secuire" VPN was the break in operational security the FBI needed to get a silent search warrent.  
+Mr. Danet happened to visit Miami, unaware that there was a warrant to search is possessions on entry to the country.  Based on the contents of his phone, the FBI was able to issue an international arrest warrant and the Romanian Police apprehended and extradited the trio. 
 
-When Mr. Danet visited Miami the warrent was used when he entered the coutnry.  Based on the contents of his phone the FBI was able to issue an international arrest warrant and the Romanian Police apprehended and extradited the trio. 
 
-%-----------------------------------
-%	Key Considerations
-%-----------------------------------
-\section*{Key Considerations} % The \section*{} command stops section numbering
-\addcontentsline{toc}{section}{Key Considerations} 
-The court filing of these men provide a clear and detailed account of a cybercriminal's methiods and operations. \cite{Gaughan:Court:Nicolescu}  The document provides a clear explination of how cybercrime can operate and the methiods to evade arrest.
+\section*{Key Considerations}
 
-The work of Bayrob Group is noteable in the depth of operational security maintatined for such a long time.  The clever use of malware that only could connect to the first step in a chain of connections provided deinablity and the use of multiple VPNs and encryption provided the sececy and deniablity that allowed for a very long run.
+The court filing of these men provide a clear and detailed account of a cybercriminals’ methods and operations. \cite{Gaughan:Court:Nicolescu}  The document provides a clear explanation of how cyber crime can operate and the methods to evade arrest.
 
-It should be noted that a team of 3 managed to steal \$4 - \$35 million over 10 years.  The size of the cybercrime group is amazing and scary.  The largest issue they seemed to face was exfiltrating the money stolen and they used a series of curriurs to move the cash or object bought and later sold for cash.  This appears to be the hurdle to cybercrime, how to cash out the thefts. 
+The work of Bayrob Group is notable in the depth of operational security maintained for such a long time.  The clever use of malware that could only connect to the first step in a chain of connections provided deniability and the use of multiple VPNs and encryption provided the secrecy and deniability that allowed for a very long run.
 
-%-----------------------------------
-%	Conclusion and/or Recommendations
-%-----------------------------------
-\section*{Conclusion} % The \section*{} command stops section numbering
-The Bayrob group's capture\cite{Symantech:Blog:Bayrob} and procecution \cite{Gaughan:Court:Nicolescu} provides cyber security students a look into the opeations of a cybercrime group that was very successful and amazingly opeationaly secure.  This should be viewed along side the work by Christopher Bing and JoelSchectman  showcasing the UAE's Project Raven\cite{Bing:Reuters:UAERaven} a work that explains how nation-state opeations are handled and the Secretary of the Navy's Cybersecurity Readiness Review \cite{Navy:ReadRev} Combined they provide understanding of the scope and motivations of the threat actors in cyberspace. 
+It should be noted that a team of 3 managed to steal \$4 - \$35 million over 10 years.  The size of the cybercrime group is amazing and scary.  The largest issue they seemed to face was exfiltrating the money stolen and they used a series of curriers to move the cash or object bought and later sold for cash.  This appears to be the hurdle to cybercrime, how to cash out the thefts. 
+
+
+\section*{Conclusion} 
+
+The Bayrob group's capture\cite{Symantech:Blog:Bayrob} and prosecution \cite{Gaughan:Court:Nicolescu} provides cyber security students a look into the operations of a cybercrime group that was very successful and amazingly opeationaly secure.  This should be viewed along side the work by Christopher Bing and Joel Schectman showcasing the UAE's Project Raven\cite{Bing:Reuters:UAERaven}, a work that explains how nation-state operations are handled and the Secretary of the Navy's Cybersecurity Readiness Review\cite{Navy:ReadRev}. Combined, they provide an understanding of the scope and motivations of the threat actors in cyberspace. 
 
 
 
@@ -149,7 +138,7 @@ The Bayrob group's capture\cite{Symantech:Blog:Bayrob} and procecution \cite{Gau
 
 %------------------------------------------------
 \phantomsection
-\newpage
+
 
 
 \section*{About the Author} % The \section*{} command stops section numbering
@@ -174,8 +163,6 @@ Department of Computer Science and Engineering at MSU
 
 \paragraph{Bagley College of Engineering}It currently ranks 51st among all engineering colleges nationally in research and development expenditures according to the National Science Foundation. U.S. News and World Report ranks its undergraduate and graduate programs in the top 100 nationwide.
 
-\paragraph{Mississippi State University}Mississippi State is one of only a few schools to earn both research and 
-community engagement rankings from the Carnegie Foundation for the Advancement of Teaching. Moreover, the National Science Foundation ranks Mississippi State among the nation’s top 100 research institutions. 
 
 \paragraph{Copyright \textsuperscript{\textregistered} \the\year \space David L. Fulton} All Rights Reserved.
 \end{spacing}
